@@ -47,5 +47,4 @@ flowchart TD;
     APIsCloud--read for sales team messages -->Kafka
     AdminFront-- basic data -->AutoContextLoader
     AutoContextLoader-- scraping -->YourSite
-```
- 
+``` 

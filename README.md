@@ -48,3 +48,15 @@ flowchart TD;
     AdminFront-- basic data -->AutoContextLoader
     AutoContextLoader-- scraping -->YourSite
 ``` 
+
+### Issues 
+AutoContextLoader - there is no point in parsing info. The first goal was to automate parsing product data, upload it to chatGPT (or else) and on base on provided info we will get the AI that knows about the product. 
+But there is limit that you could provide to AI:
+1. A lot of info need to update, when you will do it? On initialization of client could lead to sla problem 
+2. limit of chatGPT 
+3. Inconsistency of context of chatGPT , how to check that it will be in context of product ? 
+
+
+### ideas 
+1. Build something in between - general AI to make predefined workflow more alive , as is its just conversation, but with help of AI analyse what root should be for speaking with clients. All roots and scripts will be part of decision engine  - scripts for speaking with client, preferable personalized 
+2. Application from chat with verification based on AI analyses. (application forms predefined for a root - lives in Decision Engine)
